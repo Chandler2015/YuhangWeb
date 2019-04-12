@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0.75rem 0;
+}
+
+.container{
+    max-width:1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+/* Utility Classes */
+.text-primary{
+    color: red;
+}
+
+.bg-light{
+    background:#f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background: #333;
+    color: #f4f4f4;
+}
+
+
+.l-heading{
+    font-size:4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+    animation: animate1 5s ease-in-out;
+    
+   
+}
+
+@keyframes animate1{
+    25%{
+        color:red;
+        transform: translate(-100px)
+        
+    }
+    50%{
+        color:white;
+    
+    }
+    75%{
+        color:red;
+        transform: translate(100px)
+    }
+    100%{
+        color:white;
+
+    }
+
+}
+
+@keyframes animate2{
+    25%{
+        color:red;
+        transform: translate(100px)
+        
+    }
+    50%{
+        color:white;
+    
+    }
+    75%{
+        color:red;
+        transform: translate(-100px)
+    }
+    100%{
+        color:white;
+
+    }
+
+}
+
+.m-heading{
+    font-size:2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead{
+    font-size: 1.3rem;
+    margin-bottom:2rem;
+    animation: animate2 5s ease-in-out;
+}
+
+.py-1{
+    padding:1.5rem 0;
+}
+
+.py-2{
+    padding:2rem 0;
+}
+.py-3{
+    padding:3rem 0;
+}
+
+
+.p-1{
+    padding:1.5rem;
+}
+
+.p-2{
+    padding:2rem;
+}
+.p-3{
+    padding:3rem;
+}
+
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding:0.5rem 2rem;
+    border:none;
+    border-radius: 5px;
+    transition: 2s ease-in;
+}
+
+.btn:hover{
+    background:red;
+    transform: rotate(360deg)
+ 
+}
+
+.btn-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary{
+    background: #93cb52;
+    color: #fff;
+}
+
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li{
+    padding: 0.5rem;
+    border-bottom: #444 dotted 1px;
+}
+
+
+/* Navbar */
+#navbar{
+    display: flex;
+    position: sticky;
+    top:0;
+    background: #333;
+    color: #ffffff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+} 
+
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+ 
+}
+
+#navbar ul li a{
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+  
+}
+
+#navbar ul li a.current{
+    background:red;
+    color:red;
+}
+
+#navbar ul li a:hover{
+    background: red;
+    border-radius: 5px;
+     
+}
+
+/* Showcase */
+
+#showcase{
+    background: #333 url('../img/showcase.jpg') 
+    no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+
+    /*overlay*/
+  
+    top:65;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*section: what to do*/
+
+
+
+.items{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+#what .items .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i{
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+/*section: who we are*/
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background:url('../img/team.jpg') no-repeat 
+    center center/cover;
+}
+
+#clients .items img{
+    display: block;
+    margin:auto;
+    width: 60%;
+}
+
+
+/*section:contact*/
+#contact{
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .contact-form .form-group{
+    margin:0.75rem;
+}
+
+#contact .contact-from label{
+    display: inline-block;
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5;
+}
+
+#contact .contact-form input{
+    height: 1.5rem;
+}
+
+#navbar img{
+  display: inline;
+  height:20px;
+  width: 30px;   
+}
+
